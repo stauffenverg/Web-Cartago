@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes y Estadisticas</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+
+    <!-- boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- iconos -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-brand bg-info-subtle text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand">Reportes y Estadisticas</a>
+          <div class="d-flex" role="search">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-circle p-1"></i>
+                  Danidis Delgado
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="panel.html">
+                    <i class="bi bi-box-arrow-right" p-2></i>
+                    CERRAR</a>
+                </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card text-center m-4">
+        <div class="card-header">
+            Reporte y Estadisticas
+        </div>
+        <div class="card-body">
+            <div class="text-end">
+                <button class="btn bg-warning mb-3" data-bs-toggle="modal" data-bs-target="#agregarModal">
+                  <i class="bi bi-graph-up-arrow"></i>
+                    Generar
+                </button>
+            </div>
+            <!--registro 1 -->
+            <table class="table table-secondary table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <td>Id Factura</td>
+                    <td>Nit / C.c</td>
+                    <td>Razon Social</td>
+                    <td>Direccion</td>
+                    <td>Telefono</td>
+                    <td>Fecha de Factura</td>
+                    <td>Estado</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fa001</td>                        
+                    <td>6908352383</td>                        
+                    <td>GERMAN J LTDA VALLE</td>
+                    <td>Cll 11 # 17-11</td>
+                    <td>601-5958638</td>
+                    <td>14/05/2023</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Fa001</td>                        
+                    <td>8956589-9</td>                        
+                    <td>Sociedad de Recicladores</td>
+                    <td>Cll 11 # 17-11</td>
+                    <td>601-5958638</td>
+                    <td>11/03/2023</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Fa001</td>                        
+                    <td>6668341403</td>                        
+                    <td>C CASA COLOMBIA E.U</td>
+                    <td>Cll 11 # 17-11</td>
+                    <td>601-5958638</td>
+                    <td>11/02/2023</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Fa001</td>                        
+                    <td>7502370103</td>                        
+                    <td>CLINICA DE DIAZ JIMENEZ</td>
+                    <td>Cll 11 # 17-11</td>
+                    <td>601-5958638</td>
+                    <td>11/08/2023</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Fa001</td>                        
+                    <td>64295709</td>                        
+                    <td>ENCLA GOMEZ LIMITADA RINES</td>
+                    <td>Cll 11 # 17-11</td>
+                    <td>601-5958638</td>
+                    <td>11/06/2023</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Fa001</td>                        
+                    <td>889759701</td>                        
+                    <td>PLASTICOS S VIAJES</td>
+                    <td>Cll 11 # 17-11</td>
+                    <td>601-5958638</td>
+                    <td>11/06/2023</td>
+                    <td>Pendiente</td>
+                </tr>                    
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer text-body-secondary">
+          Version Beta
+        </div>
+      </div>
+
+    <!--pie de pagina-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="logo del portafolio">
+        <div class="derechos-de-autor">creado por juanky rodriguez (2023) &#169;</div>
+      </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+  <!-- Modal agregar material-->
+  <div class="modal fade" id="agregarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Generar Reportes y Estadisticas
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <!--formulario de agregar-->
+          <form id="formAgregar">
+            <div class="mb-3">
+                <label for="nit" class="form-label">Nit / C.c</label>
+                <input type="text" class="form-control" id="nit" placeholder="nit">
+                <label for="responsable" class="form-label">Colaborador</label>
+                <input type="text" class="form-control" id="responsable" placeholder="responsable">
+                <label for="numero" class="form-label">Fecha</label>
+                <input type="datetime-local" class="form-control" id="numero" placeholder="numero">
+                <label for="Seguimiento" class="form-label">tipo de material</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione Tipo de material</option>
+                    <option value="1">Papel</option>
+                    <option value="2">Carton</option>
+                    <option value="3">Aluminio</option>
+                    <option value="4">Vidrio</option>
+                    <option value="5">Hierro</option>
+                    <option value="6">Archivo</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                <label for="Observaciones" class="form-label">Observaciones</label>
+                <textarea class="form-control" id="Observaciones" rows="3"></textarea>
+              </div>
+          </form>
+
+        <!-- check-->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Generar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Imprimir
+            </label>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle p-1"></i>
+            Cancelar
+          </button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle p-1"></i>
+            Buscar
+          </button>
+          <button type="button" class="btn btn-success">
+            <i class="bi bi-save-fill p-1"></i>
+            Generar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

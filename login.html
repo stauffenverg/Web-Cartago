@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kmadasoft | Intranet</title>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <link rel="stylesheet" type="text/css" href="login.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box signin">
+        <h2>Tiene cuenta ?</h2>
+        <button class="signinBtn">Entrar</button>
+      </div>
+      <div class="box signup">
+        <h2>No tiene cuenta ?</h2>
+        <button class="signupBtn">Registrarse</button>
+      </div>
+      <div class="formBx">
+        <div class="form signinForm">
+          <form action="panel.html" method="get">
+            <h3>Ingresar <br> Kmadasoft</h3>
+            <input type="text" name="" placeholder="Username">
+            <input type="password" name="" placeholder="Password">
+            <input type="submit" name="" value="Entrar">
+            <a href="panel.html" class="forgot">Haz olvidado la contra?</a>
+          </form>
+        </div>
+        <div class="form signupForm">
+          <form>
+            <h3>Registrarse<br>Kmadasoft</h3>
+            <input type="text" name="" placeholder="Username">
+            <input type="email" name="" placeholder="Email Address">
+            <input type="password" name="" placeholder="Password">
+            <input type="password" name="" placeholder="Confirm Password">
+            <input type="submit" name="" value="Registrarse">
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      let signinBtn = document.querySelector('.signinBtn');
+      let signupBtn = document.querySelector('.signupBtn');
+      let body = document.querySelector('body');
+      signupBtn.onclick = function(){
+        body.classList.add('slide');
+      }
+      signinBtn.onclick = function(){
+        body.classList.remove('slide');
+      }
+    </script>
+  <body>
+</html>

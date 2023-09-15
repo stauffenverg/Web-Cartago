@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento del Proceso de Reciclaje</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+
+    <!-- boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- iconos -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand">Proceso de Reciclaje</a>
+          <div class="d-flex" role="search">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-circle p-1"></i>
+                  Danidis Delgado
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="panel.html">
+                    <i class="bi bi-box-arrow-right" p-2></i>
+                    CERRAR</a>
+                </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card text-center m-4">
+        <div class="card-header">
+            Seguimiento del Proseso de Reciclaje
+        </div>
+        <div class="card-body">
+            <div class="text-end">
+                <button class="btn bg-warning mb-3" data-bs-toggle="modal" data-bs-target="#agregarModal">
+                    <i class="bi bi-person-plus p-1"></i>
+                    Ver Proceso
+                </button>
+            </div>
+            <!--registro 1 -->
+            <table class="table table-primary table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <td>Id Material Ingresado</td>
+                        <td>Fecha de Recepcion</td>
+                        <td>cliente</td>
+                        <td>Proceso de Reciclaje</td>
+                        <td>Estado</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>                        
+                        <td>11-09-2023</td>                        
+                        <td>Juan Carlos Rodriguez Duran</td>
+                        <td>Carton</td>
+                        <td>Seguimiento</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>                        
+                        <td>11-09-2023</td>                        
+                        <td>Juan Carlos Rodriguez Duran</td>
+                        <td>papel</td>
+                        <td>Entregado</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>                        
+                        <td>11-09-2023</td>                        
+                        <td>Juan Carlos Rodriguez Duran</td>
+                        <td>Botella vidrio</td>
+                        <td>Seguimiento</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>                        
+                        <td>11-09-2023</td>                        
+                        <td>Juan Carlos Rodriguez Duran</td>
+                        <td>Archivo</td>
+                        <td>Entregado</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>                        
+                        <td>11-09-2023</td>                        
+                        <td>Juan Carlos Rodriguez Duran</td>
+                        <td>Plastico</td>
+                        <td>Seguimiento</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>                        
+                        <td>11-09-2023</td>                        
+                        <td>Juan Carlos Rodriguez Duran</td>
+                        <td>Alumino</td>
+                        <td>Entregado</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer text-body-secondary">
+          Version Beta
+        </div>
+      </div>
+
+    <!--pie de pagina-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="logo del portafolio">
+        <div class="derechos-de-autor">creado por juanky rodriguez (2023) &#169;</div>
+      </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+  <!-- Modal agregar material-->
+  <div class="modal fade" id="agregarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Seguimiento del Proceso de Reciclaje
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <!--formulario de agregar-->
+          <form id="formAgregar">
+            <div class="mb-3">
+                <label for="Nombre" class="form-label">Nombre del Cliente</label>
+                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+                <label for="numero" class="form-label">Seguimiento Numero</label>
+                <input type="number" class="form-control" id="numero" placeholder="numero">
+                <label for="Seguimiento" class="form-label">Seguimiento</label>
+                <input type="datetime-local" class="form-control" id="Seguimiento" placeholder="Seguimiento">
+              </div>
+              <div class="mb-3">
+                <label for="Observaciones" class="form-label">Observaciones</label>
+                <textarea class="form-control" id="Observaciones" rows="3"></textarea>
+              </div>
+          </form>
+
+        <!-- check-->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Seguimiento
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Entregado
+            </label>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle p-1"></i>
+            Cancelar
+          </button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle p-1"></i>
+            Buscar
+          </button>
+          <button type="button" class="btn btn-success">
+            <i class="bi bi-save-fill p-1"></i>
+            Ver Seguimiento
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
